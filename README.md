@@ -1,82 +1,36 @@
-# Lintas Tenda - Party Entertainment Service Website
+# Kavora Coffee ☕️
 
-## Tim Pengembang
-- Rachmasari Annisa Rida (22.11.4624)
-- Praditus Egi Danuarta (22.11.4662)
-- Muhamad Syamsul Hidayat (22.11.4664)
+Website resmi untuk brand kopi **Kavora Coffee** — tempat nongkrong anak muda yang affordable, cozy, dan kekinian.
 
-## Tentang Proyek
-Website ini adalah platform online untuk mempromosikan jasa "Lintas Tenda" yang bergerak dalam bidang Party Entertainment Service. Layanan yang ditawarkan mencakup:
-- Penyewaan tenda dan dekorasi
-- Orgen tunggal dan sound system
-- Jasa foto dan video
+## 👨‍💻 Tim Pengembang
+- Muhammad Adib Najwan (22.11.5039)
 
-Website memberikan informasi lengkap tentang layanan yang ditawarkan, harga, testimoni, kontak untuk pemesanan, serta galeri yang berisi dokumentasi acara-acara yang telah dikerjakan oleh Lintas Tenda.
+## 📌 Deskripsi Proyek
 
-## Fitur Landing Page
-- **Hero Section** - Visual menarik dan headline yang menggambarkan layanan Lintas Tenda
-- **Layanan** - Informasi detail tentang berbagai layanan yang ditawarkan
-- **Galeri** - Foto dan video dari acara-acara yang pernah dikerjakan
-- **Testimoni** - Ulasan dari pelanggan yang telah menggunakan jasa Lintas Tenda
-- **Penawaran Khusus** - Informasi tentang diskon dan promo yang tersedia
-- **FAQ** - Jawaban atas pertanyaan yang sering diajukan
-- **Kontak** - Informasi kontak dan formulir pemesanan
+**Kavora Coffee** adalah brand kopi yang menyasar remaja dan mahasiswa. Website ini dibangun sebagai platform online untuk:
 
-## Teknologi
-- React
-- Vite
-- Tailwind CSS
-- Framer Motion (untuk animasi)
+- Mengenalkan suasana dan konsep tempat Kavora
+- Menampilkan menu makanan dan minuman favorite
+- Memberikan informasi promo mingguan dan event seperti live DJ
+- Mengumpulkan email pengunjung untuk keperluan promo
+- Pengajuan kemitraan kerjasama
 
-## Cara Pengembangan
-1. Clone repositori ini
-   ```
-   git clone https://github.com/username/lintastenda.git
-   ```
+Website ini menggunakan gaya bahasa casual dan visual yang nyaman agar relatable dengan pengunjung muda.
 
-2. Masuk ke direktori proyek
-   ```
-   cd lintastenda
-   ```
+## 🚀 Fitur Landing Page
 
-3. Install dependensi
-   ```
-   npm install
-   ```
+- **Hero Section** – Gambar suasana café dengan headline menarik
+- **Tentang Kami** – Visi & misi Kavora Coffee
+- **Menu Unggulan** – List menu favorit dengan harga
+- **Promo & Event** – Info promo dan acara spesial
+- **Testimoni Pelanggan** – Review pengunjung
+- **Galeri Suasana** – Foto interior & vibe tempat
+- **Form Subscribe** – Pengumpulan email untuk promo mingguan
+- **Kontak Kerjasama** – Menjalin kerjasama kemitraan
 
-4. Jalankan server pengembangan
-   ```
-   npm run dev
-   ```
+## 🛠 Teknologi yang Digunakan
 
-5. Buka `http://localhost:5173` pada browser Anda
-
-## Struktur Proyek
-```
-lintastenda/
-├── public/          # Aset statis
-├── src/             # Kode sumber
-│   ├── components/  # Komponen React 
-│   ├── assets/      # Gambar, font, dll.
-│   ├── App.jsx      # Komponen utama
-│   └── main.jsx     # Entry point
-├── package.json     # Dependensi dan skrip
-└── README.md        # Dokumentasi proyek
-```
-
-## Anatomi Landing Page
-1. **Page Fold** - Informasi penting ditampilkan pada bagian atas halaman
-2. **Featured Section Design** - Menampilkan keunggulan produk dengan visual menarik
-3. **Powerful Copywriting** - Teks persuasif yang mendorong aksi
-4. **Unique Selling Proposition** - Keunikan jasa Lintas Tenda dibanding kompetitor
-5. **Headline** - Judul utama yang menarik perhatian
-6. **Hero Images** - Gambar besar dan mencolok di bagian atas halaman
-7. **Problem & Solution** - Menjelaskan masalah audiens dan solusi yang ditawarkan
-8. **Benefit/Reason** - Manfaat menggunakan jasa Lintas Tenda
-9. **Call to Action** - Tombol untuk menghubungi via WhatsApp
-10. **Social Proof/Testimoni** - Bukti kepuasan pelanggan
-11. **Trust Element** - Logo dan elemen kredibilitas lainnya
-12. **Deskripsi Singkat** - Ringkasan layanan yang tersedia
-13. **Foto/Video** - Konten visual di bagian galeri
-14. **Special Offer** - Penawaran diskon terbatas
-15. **FAQ** - Pertanyaan umum dan jawabannya
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
