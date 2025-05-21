@@ -17,8 +17,8 @@ const TeamInfo = () => {
           <div className="h-1 w-14 bg-[#38bdf8] rounded-full mb-3"></div>
           <p className="text-gray-300 text-sm">
             Muhammad Adib Najwan — 22.11.5039<br />
-            Shevryna B Intari — 22.11.5052<br />
-            Honnasan Yousouf — 22.11.5032
+            Shevryna B Intari — 22.11.5032<br />
+            Honnasan Yousouf —  22.11.5052
           </p>
         </div>
 
