@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import keuntunganImage from "../assets/tentang.png"; // Ganti dengan path gambar yang sesuai
+import keuntunganImage from "../assets/foto2.png"; // Ganti dengan path gambar yang sesuai
 import { CheckCircle } from "lucide-react";
 
 const KeuntunganOrder = () => {
@@ -14,18 +14,19 @@ const KeuntunganOrder = () => {
         >
           {/* Kiri: Teks */}
           <div className="space-y-6 flex-1">
-            <h2 className="text-3xl font-serif text-[#C49061]">
-            Kenapa Harus Pilih Kami? Ini Keuntungannya!            </h2>
+            <h2 className="text-3xl font-serif text-[#42A3A7]">
+              Kenapa Pilih Codeverse? Keuntungannya!{" "}
+            </h2>
             <div className="space-y-4">
               {[
-                "Tim profesional dengan pengalaman luas di berbagai industri kreatif.",
-                "Bebas menentukan konsep dan paket sesuai keinginan.",
-                "Pendampingan pengantin, fitting, serta attire & seserahan.",
-                "Konsultasi & Koordinasi Lengkap.",
-                "Dokumentasi Momen Berharga.",
+                "Instruktur Berpengalaman di bidang pemrograman.",
+                "Pendampingan Proyek Coding untuk portofolio nyata.",
+                "Kurikulum Praktis & Efektif.",
+                "Konsultasi Karier & Rencana Belajar.",
+                "Akses Materi Online 24/7.",
               ].map((text, index) => (
                 <div key={index} className="flex items-start gap-4">
-                  <CheckCircle className="text-[#C49061] w-6 h-6" />
+                  <CheckCircle className="text-[#42A3A7] w-6 h-6" />
                   <p className="text-gray-700">{text}</p>
                 </div>
               ))}
