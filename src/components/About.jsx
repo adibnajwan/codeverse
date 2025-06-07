@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import bannerImage from "../assets/keuntungan.png";
+import bannerImage from "../assets/foto1.jpg";
 
 import Keuntungan from "./Keuntungan"; // Pastikan path-nya benar!
 
@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section id="about" className="py-16 px-6 md:py-20 md:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
-        {/* Bagian Tentang Kavora Coffee*/}
+        {/* Bagian Tentang codeverse*/}
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
@@ -38,20 +38,21 @@ const About = () => {
 
           {/* Kanan: Teks dan Heading */}
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#C49061]">
-            Cerita di Balik Kavora Coffe            </h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#42A3A7]">
+              Tentang Codeverse{" "}
+            </h2>
             <p className="text-gray-600 leading-relaxed">
-              Berdiri sejak 2019, Kavora Coffee adalah wedding organizer
-              profesional yang berkomitmen menghadirkan pernikahan impian bagi
-              setiap pasangan. Didirikan oleh alumni Universitas Bandar Lampung,
-              kami memiliki tim inti berjumlah 6–12 orang yang berpengalaman
-              dalam merancang, mengelola, dan mewujudkan momen spesial dengan
-              sempurna. <br /> <br />Dengan perhatian pada detail dan pelayanan terbaik, kami
-              siap menjadikan hari bahagia Anda tak terlupakan. Dengan
-              kreativitas, ketelitian, dan layanan terbaik, kami memastikan
-              setiap detail pernikahan berjalan sempurna. Percayakan momen
-              spesial Anda kepada kami, dan biarkan kami menjadikannya indah
-              serta tak terlupakan.
+              Codeverse lahir dari keresahan akan sulitnya akses belajar
+              pemrograman yang terstruktur dan relevan dengan dunia kerja. Kami
+              percaya bahwa setiap orang berhak mendapatkan kesempatan untuk
+              memahami teknologi, tanpa terbatas oleh waktu, tempat, atau latar
+              belakang pendidikan. <br /> <br />
+              Di Codeverse, kami menghadirkan kelas-kelas online yang dirancang
+              khusus untuk membantu pemula hingga tingkat lanjut memahami
+              pemrograman secara praktis. Dengan dukungan mentor profesional,
+              kurikulum yang terus diperbarui, dan komunitas belajar yang aktif,
+              kami tidak hanya mengajarkan kode — kami membangun kepercayaan
+              diri, portofolio, dan kesiapan karier digital Anda. <br /> <br />
             </p>
           </div>
         </motion.div>
