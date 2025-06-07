@@ -3,10 +3,10 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const stats = [
-  { number: "200+", text: "Acara Berhasil" },
-  { number: "10+", text: "Kerjasama dengan Vendor" },
-  { number: "6", text: "Tahun Pengalaman" },
-  { number: "10+", text: "Tim Profesional" },
+  { number: "1,500+", text: "Siswa Belajar di Codeverse" },
+  { number: "50+", text: "Mentor Profesional" },
+  { number: "12", text: "Program Bootcamp Aktif" },
+  { number: "300+", text: "Alumni Bekerja di Industri" },
 ];
 
 const Stats = () => {
@@ -43,7 +43,7 @@ const Stats = () => {
                 visible: { scale: 1 },
                 hidden: { scale: 0.8 },
               }}
-              className="text-4xl font-bold text-[#C58F61] mb-2 font-poppins"
+              className="text-4xl font-bold text-[#42A3A7] mb-2 font-poppins"
             >
               {stat.number}
             </motion.p>
