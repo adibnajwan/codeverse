@@ -6,12 +6,12 @@ import About from './components/About';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import TeamInfo from './components/TeamInfo';
+// import TeamInfo from './components/TeamInfo';
 
 function App() {
   return (
     <div className="min-h-screen">
-      <TeamInfo />
+      {/* <TeamInfo /> */}
       <Navbar />
       <Hero />
       <Stats />
