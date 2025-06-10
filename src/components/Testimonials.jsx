@@ -7,34 +7,33 @@ import "swiper/css/pagination";
 // Data testimoni
 const testimonials = [
   {
-    name: "Risha & Misdar",
-    content:
-      "Acara pernikahan kami berjalan sempurna! Tim sangat profesional dan detail.",
+    name: "Honnas",
+    content: "Kursusnya sangat praktis dan langsung bisa dipakai di dunia kerja!.",
     rating: 5,
   },
   {
-    name: "Tomi & Rulina",
-    content: "Dekorasi indah, pelayanan ramah, dan sangat membantu dari awal hingga akhir!",
+    name: "Shelvia",
+    content: "Pengajarnya sabar dan jelas banget! kami jadi lebih cepat menguasai pembuatan website.",
     rating: 5,
   },
   {
-    name: "Febri & Iis",
-    content: "WO terbaik! Semua berjalan lancar tanpa kendala. Highly recommended!",
+    name: "Titah",
+    content: "Pembelajaran yang terstruktur dengan baik, banyak praktik yang berguna untuk skill kami.",
     rating: 4,
   },
   {
-    name: "Adi & Tiara",
-    content: "Dream wedding kami jadi kenyataan. Terima kasih atas kerja kerasnya!",
+    name: "Novi",
+    content: "Puas banget! Kelas yang menyenangkan dan bikin kami lebih percaya diri membuat aplikasi web.",
     rating: 5,
   },
   {
-    name: "Putra & Aini",
-    content: "Pelayanan luar biasa! Kami tidak perlu khawatir sama sekali di hari H.",
+    name: "Christoper",
+    content: "Materi mudah dipahami, terutama di bagian backend yang awalnya sulit kami mengerti.",
     rating: 4,
   },
   {
-    name: "Irfan & Nada",
-    content: "Pernikahan yang elegan dan berkesan, terima kasih atas segalanya!",
+    name: "Nada",
+    content: "Kursus yang sangat membantu kami memahami web development.",
     rating: 5,
   },
 ];
@@ -62,13 +61,13 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center justify-between min-h-[220px] max-w-sm mx-auto">
-                <div className="text-xl font-semibold text-[#C49061] text-center">
+              <div className="bg-blue p-6 pt-8 rounded-xl shadow-lg flex flex-col items-center justify-between min-h-[220px] max-w-sm mx-auto">
+                <div className="text-xl font-semibold text-[#003940] text-center">
                   {testimonial.name}
                 </div>
                 <div className="flex my-2">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <FaStar key={i} className="text-yellow-500" />
+                    <FaStar key={i} className="text-blue-400" />
                   ))}
                 </div>
                 <p className="text-gray-600 text-center text-sm md:text-base">
