@@ -21,10 +21,10 @@ const Footer = () => {
             duration={500}
             className="flex items-center space-x-3 m-0"
           >
-            <img
-              src={bannerImage}
-              className="w-[50] h-[100px] object-contain"
-            />
+          <img
+            src={bannerImage}
+            className="w-[400px] h-[100px] object-contain"
+          />
           </Link>
         </div>
         <div className="flex space-x-8 mt-4">
