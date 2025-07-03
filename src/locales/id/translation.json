@@ -9,6 +9,57 @@
   "about": {
     "title": "Tentang Codeverse",
     "paragraph": "Codeverse lahir dari keresahan akan sulitnya akses belajar pemrograman yang terstruktur dan relevan dengan dunia kerja. Kami percaya bahwa setiap orang berhak mendapatkan kesempatan untuk memahami teknologi, tanpa terbatas oleh waktu, tempat, atau latar belakang pendidikan.\n\nDi Codeverse, kami menghadirkan kelas-kelas online yang dirancang khusus untuk membantu pemula hingga tingkat lanjut memahami pemrograman secara praktis. Dengan dukungan mentor profesional, kurikulum yang terus diperbarui, dan komunitas belajar yang aktif, kami tidak hanya mengajarkan kode — kami membangun kepercayaan diri, portofolio, dan kesiapan karier digital Anda."
+  },
+    "footer": {
+    "nav": {
+      "hero": "Beranda",
+      "about": "Tentang",
+      "pricing": "Paket",
+      "testimonials": "Testimoni"
+    }
+  },
+  "highlight": {
+    "title": "Apa yang Akan Kamu Pelajari?",
+    "frontend": {
+      "title": "Frontend Development",
+      "topics": [
+        "HTML, CSS, dan dasar UI/UX",
+        "JavaScript fundamental",
+        "DOM manipulation & event handling",
+        "Responsive design dengan Flexbox & Grid",
+        "React.js untuk membangun UI dinamis"
+      ]
+    },
+    "backend": {
+      "title": "Backend Development",
+      "topics": [
+        "Node.js & Express.js",
+        "REST API dan HTTP Methods",
+        "Database MySQL (CRUD operations)",
+        "Autentikasi & otorisasi",
+        "Pengelolaan server & error handling"
+      ]
+    },
+    "fullstack": {
+      "title": "Full Stack Development",
+      "topics": [
+        "Integrasi frontend dan backend",
+        "React + Express.js full workflow",
+        "State management (React Hooks)",
+        "Deploy aplikasi fullstack",
+        "Project akhir berbasis portofolio"
+      ]
+    },
+    "ml": {
+      "title": "Machine Learning",
+      "topics": [
+        "Pengantar Python & NumPy, Pandas",
+        "Algoritma supervised & unsupervised learning",
+        "Neural networks & TensorFlow dasar",
+        "Proyek machine learning nyata",
+        "Evaluasi model & overfitting"
+      ]
+    }
   }
 
 }

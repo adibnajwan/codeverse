@@ -6,9 +6,62 @@
     "cta_learn": "What Will You Learn?"
   },
 
-    "about": {
+  "about": {
     "title": "About Codeverse",
     "paragraph": "Codeverse was born out of concern for the difficulty of accessing structured and work-relevant programming education. We believe that everyone deserves the opportunity to understand technology, regardless of time, location, or educational background.\n\nAt Codeverse, we offer online classes specifically designed to help beginners to advanced learners understand programming in a practical way. With support from professional mentors, constantly updated curriculum, and an active learning community, we not only teach code — we build confidence, portfolios, and your readiness for a digital career."
+  },
+
+   "footer": {
+    "nav": {
+      "hero": "Home",
+      "about": "About",
+      "pricing": "Pricing",
+      "testimonials": "Testimonials"
+    }
+  },
+  
+  "highlight": {
+    "title": "What Will You Learn?",
+    "frontend": {
+      "title": "Frontend Development",
+      "topics": [
+        "HTML, CSS, and UI/UX basics",
+        "JavaScript fundamentals",
+        "DOM manipulation & event handling",
+        "Responsive design with Flexbox & Grid",
+        "React.js to build dynamic UI"
+      ]
+    },
+    "backend": {
+      "title": "Backend Development",
+      "topics": [
+        "Node.js & Express.js",
+        "REST API and HTTP Methods",
+        "MySQL Database (CRUD operations)",
+        "Authentication & authorization",
+        "Server management & error handling"
+      ]
+    },
+    "fullstack": {
+      "title": "Full Stack Development",
+      "topics": [
+        "Integrating frontend and backend",
+        "React + Express.js full workflow",
+        "State management (React Hooks)",
+        "Deploy fullstack applications",
+        "Portfolio-based final project"
+      ]
+    },
+    "ml": {
+      "title": "Machine Learning",
+      "topics": [
+        "Intro to Python, NumPy, Pandas",
+        "Supervised & unsupervised learning algorithms",
+        "Basic neural networks & TensorFlow",
+        "Real-world ML projects",
+        "Model evaluation & overfitting"
+      ]
+    }
   }
 }
 

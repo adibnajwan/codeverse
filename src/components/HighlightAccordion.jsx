@@ -1,62 +1,28 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronDown, FiChevronUp, FiBookOpen } from "react-icons/fi";
-
-const highlights = [
-  {
-    title: "Frontend Development",
-    topics: [
-      "HTML, CSS, dan dasar UI/UX",
-      "JavaScript fundamental",
-      "DOM manipulation & event handling",
-      "Responsive design dengan Flexbox & Grid",
-      "React.js untuk membangun UI dinamis",
-    ],
-  },
-  {
-    title: "Backend Development",
-    topics: [
-      "Node.js & Express.js",
-      "REST API dan HTTP Methods",
-      "Database MySQL (CRUD operations)",
-      "Autentikasi & otorisasi",
-      "Pengelolaan server & error handling",
-    ],
-  },
-  {
-    title: "Full Stack Development",
-    topics: [
-      "Integrasi frontend dan backend",
-      "React + Express.js full workflow",
-      "State management (React Hooks)",
-      "Deploy aplikasi fullstack",
-      "Project akhir berbasis portofolio",
-    ],
-  },
-  {
-    title: "Machine Learning",
-    topics: [
-      "Pengantar Python & NumPy, Pandas",
-      "Algoritma supervised & unsupervised learning",
-      "Neural networks & TensorFlow dasar",
-      "Proyek machine learning nyata",
-      "Evaluasi model & overfitting",
-    ],
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const HighlightAccordion = () => {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const highlights = [
+    t("highlight.frontend"),
+    t("highlight.backend"),
+    t("highlight.fullstack"),
+    t("highlight.ml"),
+  ];
+
   return (
     <section id="highlight" className="py-16 px-6 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl text-center text-[#42A3A7] font-serif mb-10">
-          Apa yang Akan Kamu Pelajari?
+          {t("highlight.title")}
         </h2>
 
         <div className="space-y-4">
