@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import { FiInstagram, FiLinkedin, FiTwitter, FiYoutube } from "react-icons/fi";
+import { FiInstagram, FiYoutube, FiTwitter } from "react-icons/fi";
 import bannerImage from "../assets/codeverse_logo_footer.png";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-[#004D4D]  text-white py-8 w-full"
+      className="bg-[#004D4D] text-white py-8 w-full"
     >
       <div className="max-w-7xl mx-auto px-4 flex flex-col items-center">
         {/* Logo Codeverse di tengah */}
@@ -21,12 +21,15 @@ const Footer = () => {
             duration={500}
             className="flex items-center space-x-3 m-0"
           >
-          <img
-            src={bannerImage}
-            className="w-[400px] h-[100px] object-contain"
-          />
+            <img
+              src={bannerImage}
+              className="w-[400px] h-[100px] object-contain"
+              alt="Logo Codeverse"
+            />
           </Link>
         </div>
+
+        {/* Navigasi */}
         <div className="flex space-x-8 mt-4">
           <ul className="space-y-2 md:space-y-0 md:flex md:space-x-8">
             {[{ id: "hero", name: "Beranda" }, { id: "about", name: "Tentang" }, { id: "pricing", name: "Paket" }, { id: "testimonials", name: "Testimoni" }].map((section, idx) => (
@@ -46,9 +49,10 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Social Media */}
         <div className="flex space-x-6 mt-10 justify-center">
           <a
-            href="https://www.instagram.com/adib_najwan/"
+            href="https://www.instagram.com/codeversestore/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"
@@ -56,28 +60,20 @@ const Footer = () => {
             <FiInstagram className="text-2xl" />
           </a>
           <a
-            href="https://www.linkedin.com/in/shevryna-b-47123a273/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <FiLinkedin className="text-2xl" />
-          </a>
-          <a
-            href="https://youtu.be/Aq5WXmQQooo?si=RXYZfmZT6mTL6yPH"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <FiYoutube className="text-2xl" />
-          </a>
-          <a
-            href="https://www.twitter.com"
+            href="https://x.com/CodeverseStore"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"
           >
             <FiTwitter className="text-2xl" />
+          </a>
+          <a
+            href="https://www.youtube.com/@codeverse_store"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            <FiYoutube className="text-2xl" />
           </a>
         </div>
       </div>

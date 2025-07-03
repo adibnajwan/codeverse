@@ -44,12 +44,7 @@ const Navbar = () => {
             isOpen ? "top-16 opacity-100" : "top-[-300px] opacity-0 md:opacity-100"
           }`}
         >
-          {[
-            { id: "hero", name: "Beranda" },
-            { id: "about", name: "Tentang" },
-            { id: "pricing", name: "Program" }, // Perubahan di sini
-            { id: "testimonials", name: "Testimoni" },
-          ].map((section, idx) => (
+          {[{ id: "hero", name: "Beranda" }, { id: "about", name: "Tentang" }, { id: "pricing", name: "Program" }, { id: "testimonials", name: "Testimoni" }].map((section, idx) => (
             <li key={idx} className="md:my-0 my-4 text-center">
               <Link
                 to={section.id}
@@ -71,7 +66,7 @@ const Navbar = () => {
 
           <li className="md:my-0 my-4 text-center">
             <a
-              href="https://www.instagram.com/adib_najwan/"
+              href="https://www.instagram.com/codeversestore/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-800 hover:text-[#42A3A7] font-medium flex items-center justify-center space-x-2"
