@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FiMenu, FiX, FiInstagram } from "react-icons/fi";
-import logoCodeverse from '../assets/codeverse-logo-navbar.png'; // pastikan nama file & path sesuai
+import logoCodeverse from '../assets/codeverse-logo-navbar.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +47,7 @@ const Navbar = () => {
           {[
             { id: "hero", name: "Beranda" },
             { id: "about", name: "Tentang" },
-            { id: "program", name: "Program" },
+            { id: "pricing", name: "Program" }, // Perubahan di sini
             { id: "testimonials", name: "Testimoni" },
           ].map((section, idx) => (
             <li key={idx} className="md:my-0 my-4 text-center">

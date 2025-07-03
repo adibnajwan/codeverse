@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll"; // 1. Import Link
 import "@fontsource/playfair-display";
 import "@fontsource/poppins";
 
@@ -32,14 +33,18 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1 }}
-          className="mt-6"
+          className="mt-8" // Menambah margin-top
         >
-          <a
-            href="#program"
-            className="inline-block bg-[#42A3A7] hover:bg-[#369092] text-white font-medium px-6 py-3 rounded-full transition duration-300 shadow-md"
+          {/* 2. Tambahkan Tombol dengan Link */}
+          <Link
+            to="pricing" // Arahkan ke section dengan id="pricing"
+            smooth={true}
+            duration={500}
+            offset={-70} // Sesuaikan offset dengan tinggi navbar
+            className="inline-block bg-[#42A3A7] text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-opacity-90 transition-colors cursor-pointer"
           >
             Lihat Program
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
