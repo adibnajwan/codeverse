@@ -19,7 +19,7 @@
       "testimonials": "Testimonials"
     }
   },
-  
+
   "highlight": {
     "title": "What Will You Learn?",
     "frontend": {
@@ -62,6 +62,39 @@
         "Model evaluation & overfitting"
       ]
     }
+  },
+
+  "keuntungan": {
+    "title": "Why Choose Codeverse? Here's the Benefits!",
+    "benefits": [
+      "Experienced instructors in programming.",
+      "Project-based mentoring for real portfolios.",
+      "Practical & effective curriculum.",
+      "Career consultation & learning plan.",
+      "24/7 access to online materials."
+    ]
+  },
+
+  "navbar": {
+    "nav": {
+      "hero": "Home",
+      "about": "About",
+      "pricing": "Programs",
+      "testimonials": "Testimonials"
+    },
+    "instagram": "Instagram"
+  },
+
+  "pricing": {
+    "title": "Choose a Program, Build Your Dream Coding Career!",
+    "cta_package": "Get This Package!",
+    "cta_schedule": "Schedule Consultation"
+  },
+  
+  "services": {
+    "title": "Our Services",
+    "list": ["Decoration", "Event Coordination", "Planning"],
+    "desc": "Choose a course program, build your dream coding career!"
   }
 }
 

@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
-import keuntunganImage from "../assets/foto2.png"; // Ganti dengan path gambar yang sesuai
+import keuntunganImage from "../assets/foto2.png";
 import { CheckCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const KeuntunganOrder = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-10 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -15,16 +18,10 @@ const KeuntunganOrder = () => {
           {/* Kiri: Teks */}
           <div className="space-y-6 flex-1">
             <h2 className="text-3xl font-serif text-[#42A3A7]">
-              Kenapa Pilih Codeverse? Keuntungannya!{" "}
+              {t("keuntungan.title")}
             </h2>
             <div className="space-y-4">
-              {[
-                "Instruktur Berpengalaman di bidang pemrograman.",
-                "Pendampingan Proyek Coding untuk portofolio nyata.",
-                "Kurikulum Praktis & Efektif.",
-                "Konsultasi Karier & Rencana Belajar.",
-                "Akses Materi Online 24/7.",
-              ].map((text, index) => (
+              {t("keuntungan.benefits", { returnObjects: true }).map((text, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <CheckCircle className="text-[#42A3A7] w-6 h-6" />
                   <p className="text-gray-700">{text}</p>

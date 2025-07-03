@@ -60,6 +60,39 @@
         "Evaluasi model & overfitting"
       ]
     }
+  },
+
+  "keuntungan": {
+    "title": "Kenapa Pilih Codeverse? Keuntungannya!",
+    "benefits": [
+      "Instruktur Berpengalaman di bidang pemrograman.",
+      "Pendampingan Proyek Coding untuk portofolio nyata.",
+      "Kurikulum Praktis & Efektif.",
+      "Konsultasi Karier & Rencana Belajar.",
+      "Akses Materi Online 24/7."
+    ]
+  },
+
+  "navbar": {
+    "nav": {
+      "hero": "Beranda",
+      "about": "Tentang",
+      "pricing": "Program",
+      "testimonials": "Testimoni"
+    },
+    "instagram": "Instagram"
+  },
+
+  "pricing": {
+    "title": "Pilih Program, Wujudkan Karier Coding Impian!",
+    "cta_package": "Ambil Paket Ini!",
+    "cta_schedule": "Atur Jadwal Konsultasi"
+  },
+  
+  "services": {
+    "title": "Layanan Kami",
+    "list": ["Dekorasi", "Koordinasi Acara", "Perencanaan"],
+    "desc": "Pilih Program Kursus, Wujudkan Karier Coding Impian!"
   }
 
 }
