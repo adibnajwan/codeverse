@@ -1,72 +1,17 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiCheckCircle } from "react-icons/fi";
-
-const packages = [
-  {
-    name: "Frontend Development",
-    price: "Rp.2.500.000",
-    features: [
-      "HTML, CSS, JavaScript",
-      "Website Responsif",
-      "Proyek Website Sederhana",
-      "5x Sesi Konsultasi",
-      "Akses Materi Kapan Saja",
-      "Bimbingan Portofolio",
-      "24/7 Dukungan Instruktur",
-    ],
-  },
-  {
-    name: "Backend Development",
-    price: "Rp.4.000.000",
-    features: [
-      "Node.js, Express, MySQL",
-      "Membangun API & Server",
-      "Proyek Aplikasi Backend",
-      "5x Sesi Konsultasi",
-      "Akses Materi Kapan Saja",
-      "Pendampingan Portofolio",
-      "24/7 Dukungan Instruktur",
-    ],
-  },
-  {
-    name: "Full Stack Development",
-    price: "Rp.5.500.000",
-    features: [
-      "Frontend & Backend Development",
-      "React & Node.js",
-      "Proyek Aplikasi Web",
-      "5x Sesi Konsultasi",
-      "Akses Materi Kapan Saja",
-      "Pendampingan Karier",
-      "24/7 Dukungan Instruktur",
-    ],
-  },
-  {
-    name: "Machine Learning Developer",
-    price: "Rp.12.000.000",
-    features: [
-      "Machine Learning & Deep Learning",
-      "Algoritma ML & Neural Networks",
-      "Proyek AI",
-      "Pendampingan Karier",
-      "Portofolio Machine Learning",
-      "5x Sesi Konsultasi",
-      "Akses Materi Seumur Hidup",
-      "24/7 Dukungan Instruktur",
-    ],
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Pricing = () => {
   const [selectedPackageIndex, setSelectedPackageIndex] = useState(-1);
+  const { t } = useTranslation();
+  const packages = t("pricing.packages", { returnObjects: true });
 
   const handleBuyPackage = (packageName) => {
     const phoneNumber = "6282115642724";
     const message = `Halo, saya tertarik dengan program ${packageName}. Bisa saya dapatkan informasi lebih lanjut?`;
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
@@ -84,7 +29,7 @@ const Pricing = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-3xl text-center mb-12 text-[#42A3A7] font-serif"
         >
-          Pilih Program, Wujudkan Karier Coding Impian!
+          {t("pricing.title")}
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -119,7 +64,7 @@ const Pricing = () => {
                 onClick={() => handleBuyPackage(pkg.name)}
                 className="mt-auto w-full bg-[#42A3A7] text-white py-3 rounded-md hover:bg-[#42A3A7]"
               >
-                Ambil Paket Ini!
+                {t("pricing.cta")}
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -127,7 +72,7 @@ const Pricing = () => {
                 onClick={handleGoogleCalendar}
                 className="mt-4 w-full bg-gray-200 text-black py-3 rounded-md hover:bg-gray-300"
               >
-                Atur Jadwal Konsultasi
+                {t("pricing.schedule")}
               </motion.button>
             </motion.div>
           ))}

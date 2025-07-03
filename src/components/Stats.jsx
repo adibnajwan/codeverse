@@ -1,29 +1,25 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-const stats = [
-  { number: "1,500+", text: "Siswa Belajar di Codeverse" },
-  { number: "50+", text: "Mentor Profesional" },
-  { number: "12", text: "Program Bootcamp Aktif" },
-  { number: "300+", text: "Alumni Bekerja di Industri" },
-];
+import { useTranslation } from "react-i18next";
 
 const Stats = () => {
+  const { t } = useTranslation();
+  const stats = t("stats", { returnObjects: true });
+
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: false });
 
   useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
-    }
+    controls.start(inView ? "visible" : "hidden");
   }, [controls, inView]);
 
   return (
     <section className="py-12 px-4 bg-white">
-      <div ref={ref} className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div
+        ref={ref}
+        className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8"
+      >
         {stats.map((stat, index) => (
           <motion.div
             key={index}
@@ -47,7 +43,9 @@ const Stats = () => {
             >
               {stat.number}
             </motion.p>
-            <p className="text-gray-700 font-medium font-serif">{stat.text}</p>
+            <p className="text-gray-700 font-medium font-serif">
+              {stat.text}
+            </p>
           </motion.div>
         ))}
       </div>

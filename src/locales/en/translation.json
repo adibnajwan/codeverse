@@ -86,15 +86,83 @@
   },
 
   "pricing": {
-    "title": "Choose a Program, Build Your Dream Coding Career!",
-    "cta_package": "Get This Package!",
-    "cta_schedule": "Schedule Consultation"
+    "title": "Choose a Program and Build Your Dream Coding Career!",
+    "packages": [
+      {
+        "name": "Frontend Development",
+        "price": "Rp.2,500,000",
+        "features": [
+          "HTML, CSS, JavaScript",
+          "Responsive Website",
+          "Simple Website Project",
+          "5x Consultation Sessions",
+          "Access Materials Anytime",
+          "Portfolio Mentoring",
+          "24/7 Instructor Support"
+        ]
+      },
+      {
+        "name": "Backend Development",
+        "price": "Rp.4,000,000",
+        "features": [
+          "Node.js, Express, MySQL",
+          "Build API & Server",
+          "Backend App Project",
+          "5x Consultation Sessions",
+          "Access Materials Anytime",
+          "Portfolio Mentoring",
+          "24/7 Instructor Support"
+        ]
+      },
+      {
+        "name": "Full Stack Development",
+        "price": "Rp.5,500,000",
+        "features": [
+          "Frontend & Backend Development",
+          "React & Node.js",
+          "Web App Project",
+          "5x Consultation Sessions",
+          "Access Materials Anytime",
+          "Career Mentoring",
+          "24/7 Instructor Support"
+        ]
+      },
+      {
+        "name": "Machine Learning Developer",
+        "price": "Rp.12,000,000",
+        "features": [
+          "Machine Learning & Deep Learning",
+          "ML Algorithms & Neural Networks",
+          "AI Project",
+          "Career Mentoring",
+          "Machine Learning Portfolio",
+          "5x Consultation Sessions",
+          "Lifetime Access to Materials",
+          "24/7 Instructor Support"
+        ]
+      }
+    ],
+    "cta": "Choose This Package!",
+    "schedule": "Schedule a Consultation"
   },
-  
-  "services": {
-    "title": "Our Services",
-    "list": ["Decoration", "Event Coordination", "Planning"],
-    "desc": "Choose a course program, build your dream coding career!"
+
+  "stats": [
+    { "number": "1,500+", "text": "Students Learning at Codeverse" },
+    { "number": "50+", "text": "Professional Mentors" },
+    { "number": "12", "text": "Active Bootcamp Programs" },
+    { "number": "300+", "text": "Alumni Working in Industry" }
+  ],
+
+  "testimonials": {
+    "title": "Customer Testimonials",
+    "data": [
+      { "name": "Honnas", "content": "The course is very practical and directly applicable to the work field!", "rating": 5 },
+      { "name": "Shelvia", "content": "The instructor is very patient and clear! We were able to quickly master website building.", "rating": 5 },
+      { "name": "Titah", "content": "Well-structured learning, lots of practice useful for our skills.", "rating": 4 },
+      { "name": "Novi", "content": "Very satisfied! Fun class and made us more confident to build web apps.", "rating": 5 },
+      { "name": "Christoper", "content": "The material is easy to understand, especially the backend part which we initially struggled with.", "rating": 4 },
+      { "name": "Nada", "content": "This course really helped us understand web development.", "rating": 5 }
+    ]
   }
 }
 

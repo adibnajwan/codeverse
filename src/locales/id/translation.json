@@ -85,14 +85,81 @@
 
   "pricing": {
     "title": "Pilih Program, Wujudkan Karier Coding Impian!",
-    "cta_package": "Ambil Paket Ini!",
-    "cta_schedule": "Atur Jadwal Konsultasi"
+    "packages": [
+      {
+        "name": "Frontend Development",
+        "price": "Rp.2.500.000",
+        "features": [
+          "HTML, CSS, JavaScript",
+          "Website Responsif",
+          "Proyek Website Sederhana",
+          "5x Sesi Konsultasi",
+          "Akses Materi Kapan Saja",
+          "Bimbingan Portofolio",
+          "24/7 Dukungan Instruktur"
+        ]
+      },
+      {
+        "name": "Backend Development",
+        "price": "Rp.4.000.000",
+        "features": [
+          "Node.js, Express, MySQL",
+          "Membangun API & Server",
+          "Proyek Aplikasi Backend",
+          "5x Sesi Konsultasi",
+          "Akses Materi Kapan Saja",
+          "Pendampingan Portofolio",
+          "24/7 Dukungan Instruktur"
+        ]
+      },
+      {
+        "name": "Full Stack Development",
+        "price": "Rp.5.500.000",
+        "features": [
+          "Frontend & Backend Development",
+          "React & Node.js",
+          "Proyek Aplikasi Web",
+          "5x Sesi Konsultasi",
+          "Akses Materi Kapan Saja",
+          "Pendampingan Karier",
+          "24/7 Dukungan Instruktur"
+        ]
+      },
+      {
+        "name": "Machine Learning Developer",
+        "price": "Rp.12.000.000",
+        "features": [
+          "Machine Learning & Deep Learning",
+          "Algoritma ML & Neural Networks",
+          "Proyek AI",
+          "Pendampingan Karier",
+          "Portofolio Machine Learning",
+          "5x Sesi Konsultasi",
+          "Akses Materi Seumur Hidup",
+          "24/7 Dukungan Instruktur"
+        ]
+      }
+    ],
+    "cta": "Ambil Paket Ini!",
+    "schedule": "Atur Jadwal Konsultasi"
   },
-  
-  "services": {
-    "title": "Layanan Kami",
-    "list": ["Dekorasi", "Koordinasi Acara", "Perencanaan"],
-    "desc": "Pilih Program Kursus, Wujudkan Karier Coding Impian!"
-  }
 
+  "stats": [
+    { "number": "1,500+", "text": "Siswa Belajar di Codeverse" },
+    { "number": "50+", "text": "Mentor Profesional" },
+    { "number": "12", "text": "Program Bootcamp Aktif" },
+    { "number": "300+", "text": "Alumni Bekerja di Industri" }
+  ],
+
+  "testimonials": {
+    "title": "Testimoni Pelanggan",
+    "data": [
+      { "name": "Honnas", "content": "Kursusnya sangat praktis dan langsung bisa dipakai di dunia kerja!.", "rating": 5 },
+      { "name": "Shelvia", "content": "Pengajarnya sabar dan jelas banget! kami jadi lebih cepat menguasai pembuatan website.", "rating": 5 },
+      { "name": "Titah", "content": "Pembelajaran yang terstruktur dengan baik, banyak praktik yang berguna untuk skill kami.", "rating": 4 },
+      { "name": "Novi", "content": "Puas banget! Kelas yang menyenangkan dan bikin kami lebih percaya diri membuat aplikasi web.", "rating": 5 },
+      { "name": "Christoper", "content": "Materi mudah dipahami, terutama di bagian backend yang awalnya sulit kami mengerti.", "rating": 4 },
+      { "name": "Nada", "content": "Kursus yang sangat membantu kami memahami web development.", "rating": 5 }
+    ]
+  }
 }
