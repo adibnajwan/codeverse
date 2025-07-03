@@ -4,5 +4,11 @@
     "subtitle": "Mulai dari dasar hingga siap kerja bersama mentor berpengalaman dan kurikulum terstruktur.",
     "cta_program": "Lihat Program",
     "cta_learn": "Apa yang Akan Kamu Pelajari?"
+  },
+
+  "about": {
+    "title": "Tentang Codeverse",
+    "paragraph": "Codeverse lahir dari keresahan akan sulitnya akses belajar pemrograman yang terstruktur dan relevan dengan dunia kerja. Kami percaya bahwa setiap orang berhak mendapatkan kesempatan untuk memahami teknologi, tanpa terbatas oleh waktu, tempat, atau latar belakang pendidikan.\n\nDi Codeverse, kami menghadirkan kelas-kelas online yang dirancang khusus untuk membantu pemula hingga tingkat lanjut memahami pemrograman secara praktis. Dengan dukungan mentor profesional, kurikulum yang terus diperbarui, dan komunitas belajar yang aktif, kami tidak hanya mengajarkan kode — kami membangun kepercayaan diri, portofolio, dan kesiapan karier digital Anda."
   }
+
 }
