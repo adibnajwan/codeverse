@@ -11,12 +11,11 @@ const HighlightAccordion = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const highlights = [
-    t("highlight.frontend"),
-    t("highlight.backend"),
-    t("highlight.fullstack"),
-    t("highlight.ml"),
-  ];
+  // Gunakan returnObjects: true agar .title dan .topics bisa diakses
+  const keys = ["frontend", "backend", "fullstack", "ml"];
+  const highlights = keys.map((key) =>
+    t(`highlight.${key}`, { returnObjects: true })
+  );
 
   return (
     <section id="highlight" className="py-16 px-6 bg-gray-50">
