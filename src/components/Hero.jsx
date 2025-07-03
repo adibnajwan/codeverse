@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-scroll"; // 1. Import Link
 import "@fontsource/playfair-display";
 import "@fontsource/poppins";
 
@@ -16,7 +15,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="text-[28px] sm:text-[36px] md:text-[44px] font-playfair font-semibold text-[#42A3A7] leading-snug"
         >
-          Platform Bootcamp Online Interaktif untuk Masa Depanmu di Dunia Digital
+          Belajar Coding Jadi Lebih Mudah & Terarah
         </motion.h1>
 
         <motion.p
@@ -25,26 +24,27 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 1 }}
           className="mt-4 text-base sm:text-lg text-gray-700 font-poppins leading-relaxed"
         >
-          Codeverse membantumu belajar pemrograman dan teknologi terkini secara fleksibel.
-          Ikuti program bootcamp bersama mentor ahli, bangun portofolio nyata, dan mulai karier impianmu di industri digital.
+          Mulai dari dasar hingga siap kerja bersama mentor berpengalaman dan kurikulum terstruktur.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1 }}
-          className="mt-8" // Menambah margin-top
+          className="mt-6 flex flex-col sm:flex-row gap-4 justify-center"
         >
-          {/* 2. Tambahkan Tombol dengan Link */}
-          <Link
-            to="pricing" // Arahkan ke section dengan id="pricing"
-            smooth={true}
-            duration={500}
-            offset={-70} // Sesuaikan offset dengan tinggi navbar
-            className="inline-block bg-[#42A3A7] text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-opacity-90 transition-colors cursor-pointer"
+          <a
+            href="#program"
+            className="bg-[#42A3A7] hover:bg-[#369092] text-white font-medium px-6 py-3 rounded-full transition duration-300 shadow-md"
           >
             Lihat Program
-          </Link>
+          </a>
+          <a
+            href="#highlight"
+            className="bg-white border border-[#42A3A7] text-[#42A3A7] hover:bg-gray-100 px-6 py-3 rounded-full font-medium transition duration-300 shadow-md"
+          >
+            Apa yang Akan Kamu Pelajari?
+          </a>
         </motion.div>
       </div>
     </section>
