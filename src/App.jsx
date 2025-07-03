@@ -6,6 +6,7 @@ import About from './components/About';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import Highlight from "./components/HighlightAccordion";
 // import TeamInfo from './components/TeamInfo';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Stats />
       <About />
+      <Highlight />
       <Pricing />
       <Testimonials />
       <Footer />
