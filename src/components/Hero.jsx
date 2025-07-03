@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import "@fontsource/playfair-display";
 import "@fontsource/poppins";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="hero"
@@ -15,7 +18,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="text-[28px] sm:text-[36px] md:text-[44px] font-playfair font-semibold text-[#42A3A7] leading-snug"
         >
-          Belajar Coding Jadi Lebih Mudah & Terarah
+          {t('hero.title')}
         </motion.h1>
 
         <motion.p
@@ -24,7 +27,7 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 1 }}
           className="mt-4 text-base sm:text-lg text-gray-700 font-poppins leading-relaxed"
         >
-          Mulai dari dasar hingga siap kerja bersama mentor berpengalaman dan kurikulum terstruktur.
+          {t('hero.subtitle')}
         </motion.p>
 
         <motion.div
@@ -37,13 +40,13 @@ const Hero = () => {
             href="#program"
             className="bg-[#42A3A7] hover:bg-[#369092] text-white font-medium px-6 py-3 rounded-full transition duration-300 shadow-md"
           >
-            Lihat Program
+            {t('hero.cta_program')}
           </a>
           <a
             href="#highlight"
             className="bg-white border border-[#42A3A7] text-[#42A3A7] hover:bg-gray-100 px-6 py-3 rounded-full font-medium transition duration-300 shadow-md"
           >
-            Apa yang Akan Kamu Pelajari?
+            {t('hero.cta_learn')}
           </a>
         </motion.div>
       </div>

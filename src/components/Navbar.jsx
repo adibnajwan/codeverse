@@ -2,10 +2,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FiMenu, FiX, FiInstagram } from "react-icons/fi";
+import { useTranslation } from "react-i18next"; // ← Tambahan
 import logoCodeverse from '../assets/codeverse-logo-navbar.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { i18n } = useTranslation(); // ← Tambahan
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -28,6 +30,12 @@ const Navbar = () => {
         >
           <img src={logoCodeverse} alt="Logo Codeverse" className="h-12 md:h-14 w-auto" />
         </Link>
+
+        {/* Language Switcher (Desktop) */}
+        <div className="hidden md:flex gap-2 items-center ml-4">
+          <button onClick={() => i18n.changeLanguage('id')} className="text-sm text-gray-700 hover:text-[#42A3A7]">🇮🇩 ID</button>
+          <button onClick={() => i18n.changeLanguage('en')} className="text-sm text-gray-700 hover:text-[#42A3A7]">🇬🇧 EN</button>
+        </div>
 
         {/* Hamburger Menu */}
         <div className="md:hidden" onClick={toggleMenu}>
@@ -59,6 +67,14 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+
+          {/* Language Switcher (Mobile) */}
+          <li className="md:hidden my-2 text-center">
+            <div className="flex justify-center gap-2">
+              <button onClick={() => i18n.changeLanguage('id')} className="text-sm text-gray-700 hover:text-[#42A3A7]">🇮🇩 ID</button>
+              <button onClick={() => i18n.changeLanguage('en')} className="text-sm text-gray-700 hover:text-[#42A3A7]">🇬🇧 EN</button>
+            </div>
+          </li>
 
           <li className="hidden md:flex items-center mx-2">
             <span className="text-gray-400">|</span>
