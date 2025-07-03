@@ -26,7 +26,7 @@ const Navbar = () => {
   ];
 
   const getLangLabel = () =>
-    i18n.language === "id" ? "English" : "Indonesia";
+    i18n.language === "id" ? "Indonesia" : "English";
 
   return (
     <motion.nav
